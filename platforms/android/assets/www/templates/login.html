@@ -1,0 +1,22 @@
+<ion-view view-title="PayTile" hide-back-button="true" can-swipe-back="false" cache-view="false">
+  <ion-content class="padding">
+    <div class="paytileDesc">
+      <p class="paytileDesc-text">{{ 'MAIN_TEMPLATE_TITLE' | translate }}<br /> {{ 'TITLE_DESC' | translate }}</p>
+    </div>
+  <form name="loginForm">
+    <div class="loginList loginList-inset">
+          <label class="loginItem loginItem-input ion-email">
+              <input required type="text" placeholder="Email" ng-model="data.email">
+          </label>
+          <label class="loginItem loginItem-input ion-locked">
+              <input required type="password" placeholder="Password" ng-model="data.password">
+          </label>
+          <ion-toggle toggle-class="toggle-balanced" id="toggle" name="ON" value="on" >{{ 'TOGGLE_BTN_DESC' | translate }}</ion-toggle>
+    </div>
+ </form>
+      <button class="loginBtn button-block button-dark" ng-disabled="!loginForm.$valid" ng-click="login()">Login</button>
+      <div class="forgotPasswd"><a href="#tags"/ style="font-weight: bold">Forgot Password?</div>
+      <div class="signup"> <span class="misc">Not a member? </span> <a  style="font-weight: bold" ng-click="signUp()" >Sign up</a></div>
+
+  </ion-content>
+</ion-view>
