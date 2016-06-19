@@ -7,5 +7,10 @@
   "FORGOT_PSSWD":                "Forgot Password?",
   "SIGN_UP_DESC":                "Not a member?",
   "SIGN_UP":                     "Sign up",
-  "BACK_BTN":                    "Back"
+  "BACK_BTN":                    "Back",
+  "SIGN_UP_TITLE_DESC_1":        "Pay and Earn in style",
+  "SIGN_UP_TITLE_DESC_2":        "MAKE YOUR SELECTION",
+  "USER_PATRON_BTN":             "Patron",
+  "USER_BENEFICIARY_BTN":        "Beneficiary",
+  "SIGN_UP_FOOTER":              "Click here to get in touch with us"
 }
