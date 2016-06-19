@@ -64,8 +64,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   .useSanitizeValueStrategy('escapeParameters');
 })
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($ionicConfigProvider, $stateProvider, $urlRouterProvider) {
 
+  $ionicConfigProvider.backButton.text("{{ 'BACK_BTN' | translate }}");                    // default is 'Back'
+  $ionicConfigProvider.backButton.previousTitleText(false);
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router
   // Set up the various states which the app can be in.
@@ -76,7 +78,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   .state('login', {
       url: '/login',
       templateUrl: 'templates/login.html',
-      controller: 'IonicLogin'
+      controller: 'LoginCtrl'
   })
 
   // Each tab has its own nav history stack:
@@ -85,6 +87,25 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       url: '/signup',
       templateUrl: 'templates/signup.html',
       controller: 'SignUpCtrl'
+
+
+  })
+  .state('patronRegisteration', {
+      url: '/patronRegisteration',
+      templateUrl: 'templates/patron-registeration.html',
+      controller: 'PatronCtrl'
+
+
+  }).state('beneficiaryRegisteration', {
+      url: '/beneficiaryRegisteration',
+      templateUrl: 'templates/beneficiary-registeration.html',
+      controller: 'BeneficiaryCtrl'
+
+
+  }).state('support', {
+      url: '/support',
+      templateUrl: 'templates/support.html',
+      controller: 'SupportCtrl'
 
 
   });

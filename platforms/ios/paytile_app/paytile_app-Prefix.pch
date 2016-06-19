@@ -17,7 +17,7 @@
  under the License.
  */
 //
-// Prefix header for all source files of the 'HelloCordova' target in the 'HelloCordova' project
+// Prefix header for all source files of the 'paytile_app' target in the 'paytile_app' project
 //
 
 #ifdef __OBJC__

@@ -6,5 +6,6 @@
   "LOGIN_BTN":                   "Login",
   "FORGOT_PSSWD":                "Forgot Password?",
   "SIGN_UP_DESC":                "Not a member?",
-  "SIGN_UP":                     "Sign up"
+  "SIGN_UP":                     "Sign up",
+  "BACK_BTN":                    "Back"
 }

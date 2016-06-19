@@ -1,7 +1,7 @@
-<ion-view view-title="PayTile" hide-back-button="true" can-swipe-back="false" cache-view="false">
+<ion-view view-title="{{ 'APP_TITLE' | translate }}" hide-back-button="true" can-swipe-back="false" cache-view="false">
   <ion-content class="padding">
     <div class="paytileDesc">
-      <p class="paytileDesc-text">{{ 'MAIN_TEMPLATE_TITLE' | translate }}<br /> {{ 'TITLE_DESC' | translate }}</p>
+      <p class="paytileDesc-text">{{ 'TITLE_DESC_1' | translate }}<br /> {{ 'TITLE_DESC_2' | translate }}</p>
     </div>
   <form name="loginForm">
     <div class="loginList loginList-inset">
@@ -14,9 +14,9 @@
           <ion-toggle toggle-class="toggle-balanced" id="toggle" name="ON" value="on" >{{ 'TOGGLE_BTN_DESC' | translate }}</ion-toggle>
     </div>
  </form>
-      <button class="loginBtn button-block button-dark" ng-disabled="!loginForm.$valid" ng-click="login()">Login</button>
-      <div class="forgotPasswd"><a href="#tags"/ style="font-weight: bold">Forgot Password?</div>
-      <div class="signup"> <span class="misc">Not a member? </span> <a  style="font-weight: bold" ng-click="signUp()" >Sign up</a></div>
+      <button class="loginBtn button-block button-dark" ng-disabled="!loginForm.$valid" ng-click="login()">{{ 'LOGIN_BTN' | translate }}</button>
+      <div class="forgotPasswd"><a href="#tags"/ style="font-weight: bold">{{ 'FORGOT_PSSWD' | translate }}</div>
+      <div class="signup"> <span class="misc">{{ 'SIGN_UP_DESC' | translate }}</span> <a  style="font-weight: bold" ng-click="signUp()" >{{ 'SIGN_UP' | translate }}</a></div>
 
   </ion-content>
 </ion-view>

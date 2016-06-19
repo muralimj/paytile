@@ -1,7 +1,7 @@
 .loginItem {
     border-color: #ddd;
-    background-color: #fff;
-    color: #444;
+    background-color: $light;
+    color: $dark;
     position: relative;
     z-index: 2;
     display: block;
@@ -40,7 +40,7 @@
     overflow: hidden;
     margin: 20px 10px;
     border-radius: 2px;
-    background-color: #fff;
+    background-color: $light;
 }
 .padding .card, .padding .loginList-inset {
     margin-left: 0;
@@ -52,8 +52,8 @@
 
 .loginBtn.button-dark {
     border-color: transparent;
-    background-color: #444;
-    color: #fff;
+    background-color: $dark;
+    color: $light;
 }
 
 .loginBtn-block:after {
@@ -69,8 +69,8 @@
 }
 .loginBtn {
     border-color: transparent;
-    background-color: #f8f8f8;
-    color: #444;
+    background-color: $stable;
+    color: $dark;
     position: relative;
     display: inline-block;
     margin: 0;
@@ -108,10 +108,12 @@ loginBtn[disabled], html input[disabled] {
 .forgotPasswd
 {
   text-align: center;
+  cursor: pointer;
 }
 .signup
 {
   text-align: center;
+  cursor: pointer;
 }
 .misc
 {
@@ -163,16 +165,16 @@ a {
     content: ' ';
 }
 
-.selUserbutton.button-calm {
+.selUserbutton.button-balanced {
     border-color: transparent;
-    background-color: #11c1f3;
-    color: #fff;
+    background-color: $balanced;
+    color: $light;
 }
 
 .selUserbutton {
     border-color: transparent;
-    background-color: #f8f8f8;
-    color: #444;
+    background-color: $stable;
+    color: $dark;
     position: relative;
     display: inline-block;
     margin: 0;
@@ -192,5 +194,8 @@ a {
 }
 
 .selUserDiv {
+  text-align: center;
+}
+.singupFooter {
   text-align: center;
 }

@@ -7,8 +7,36 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'ngCordova', 'tmh.dynamicLocale', 'pascalprecht.translate'])
 
-.run(function($ionicPlatform) {
+.constant('availableLanguages', ['en-US', 'de'])
+.constant('defaultLanguage', 'en-US')
+
+.run(function($ionicPlatform, tmhDynamicLocale, $translate, $cordovaGlobalization, availableLanguages, $rootScope, defaultLanguage, $locale) {
+
+  function applyLanguage(language) {
+    tmhDynamicLocale.set(language.toLowerCase());
+  }
+
+  function getSuitableLanguage(language) {
+    for (var index = 0; index < availableLanguages.length; index++) {
+      if (availableLanguages[index].toLowerCase() == language.toLowerCase())
+        return availableLanguages[index];
+    }
+    return defaultLanguage
+  }
+
+  function setLanguage() {
+    if (typeof navigator.globalization != "undefined") {
+      $cordovaGlobalization.getPreferredLanguage().then(function (result) {
+        var language = getSuitableLanguage(result.value);
+        applyLanguage(language);
+        $translate.use(language);
+      });
+    } else {
+      applyLanguage(defaultLanguage);
+    }
+  }
   $ionicPlatform.ready(function() {
+    setLanguage();
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
     if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
@@ -23,21 +51,23 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   });
 })
 
-.config(function($stateProvider, $urlRouterProvider, $translateProvider) {
-
+.config(function (tmhDynamicLocaleProvider, $translateProvider, defaultLanguage) {
+  tmhDynamicLocaleProvider
+  .localeLocationPattern('locales/angular-locale_{{locale}}.js');
   $translateProvider
     .useStaticFilesLoader({
       prefix: 'i18n/',
       suffix: '.json'
-    })
-    .registerAvailableLanguageKeys(['en', 'de'], {
-      'en' : 'en', 'en_GB': 'en', 'en_US': 'en',
-      'de' : 'de', 'de_DE': 'de', 'de_CH': 'de'
-    })
-    .preferredLanguage('de')
-    .fallbackLanguage('de')
-    .determinePreferredLanguage()
-    .useSanitizeValueStrategy('escapeParameters');
+    });
+  $translateProvider
+  .preferredLanguage(defaultLanguage)
+  .useSanitizeValueStrategy('escapeParameters');
+})
+
+.config(function($ionicConfigProvider, $stateProvider, $urlRouterProvider) {
+
+  $ionicConfigProvider.backButton.text("{{ 'BACK_BTN' | translate }}");                    // default is 'Back'
+  $ionicConfigProvider.backButton.previousTitleText(false);
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router
   // Set up the various states which the app can be in.
@@ -48,7 +78,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   .state('login', {
       url: '/login',
       templateUrl: 'templates/login.html',
-      controller: 'IonicLogin'
+      controller: 'LoginCtrl'
   })
 
   // Each tab has its own nav history stack:
@@ -57,6 +87,25 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       url: '/signup',
       templateUrl: 'templates/signup.html',
       controller: 'SignUpCtrl'
+
+
+  })
+  .state('patronRegisteration', {
+      url: '/patronRegisteration',
+      templateUrl: 'templates/patron-registeration.html',
+      controller: 'PatronCtrl'
+
+
+  }).state('beneficiaryRegisteration', {
+      url: '/beneficiaryRegisteration',
+      templateUrl: 'templates/beneficiary-registeration.html',
+      controller: 'BeneficiaryCtrl'
+
+
+  }).state('support', {
+      url: '/support',
+      templateUrl: 'templates/support.html',
+      controller: 'SupportCtrl'
 
 
   });

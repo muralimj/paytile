@@ -119,10 +119,12 @@ select {
   text-transform: none; }
 
 .forgotPasswd {
-  text-align: center; }
+  text-align: center;
+  cursor: pointer; }
 
 .signup {
-  text-align: center; }
+  text-align: center;
+  cursor: pointer; }
 
 .misc {
   color: #000;
@@ -166,9 +168,9 @@ a {
   left: -6px;
   content: ' '; }
 
-.selUserbutton.button-calm {
+.selUserbutton.button-balanced {
   border-color: transparent;
-  background-color: #11c1f3;
+  background-color: #33cd5f;
   color: #fff; }
 
 .selUserbutton {
@@ -192,6 +194,9 @@ a {
   cursor: pointer; }
 
 .selUserDiv {
+  text-align: center; }
+
+.singupFooter {
   text-align: center; }
 
 /*!

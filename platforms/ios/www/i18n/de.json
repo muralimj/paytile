@@ -1,18 +1,10 @@
 {
-  "MAIN_TEMPLATE_TITLE":         "Willkommen bei PayTile !",
-  "TITLE_DESC":                  "Pay und verdienen in der Art. Bitte einloggen.",
+  "APP_TITLE":                   "PayTile",
+  "TITLE_DESC_1":                "Willkommen bei PayTile !",
+  "TITLE_DESC_2":                "Pay und verdienen in der Art. Bitte einloggen.",
   "TOGGLE_BTN_DESC":             "Immer Angemeldete",
-  "PREVIEW_TEMPLATE_TITLE":      "Vorschau",
-  "EDITOR_TEMPLATE_TITLE":       "Editor",
-
-  "SIDE_MENU_TEMPLATE_CONTENT":  "Inhalt",
-  "SIDE_MENU_TEMPLATE_NEW_POST": "neuer Beitrag",
-  "SIDE_MENU_TEMPLATE_SETTINGS": "Einstellungen",
-
-  "ALL_POSTS":                   "Alle Beiträge",
-  "NO_POSTS":                    "keine Einträge :(",
-  "EDIT":                        "BEARBEITEN",
-  "MARKDOWN":                    "MARKDOWN",
-  "PREVIEW":                     "VORSCHAU",
-  "UPDATE_POST":                 "UPDATE BEITRAG"
+  "LOGIN_BTN":                   "Anmeldung",
+  "FORGOT_PSSWD":                "Passwort vergessen?",
+  "SIGN_UP_DESC":                "Kein Mitglied?",
+  "SIGN_UP":                     "Anmelden"
 }

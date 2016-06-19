@@ -1,24 +1,9 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope, IonicLogin) {
-
-  $scope.$on('$ionicView.enter', function(e) {
-      $scope.session = JSON.parse( window.localStorage['session']) ; // read the session information
-  });
-
-   $scope.logout = function(){
-       IonicLogin.logout($scope.session.email);
-  }
-
-})
-
-.controller('IonicLogin', function($scope, IonicLogin, $ionicLoading, $state, $translate) {
+.controller('LoginCtrl', function($scope, IonicLogin, $ionicLoading, $state) {
 
   $scope.data = {} ;
-  $scope.switchLanguage = function(key) {
-    $translate.use(key);
-  }
-  $scope.switchLanguage('de');
+
   $scope.logout = function(){
        IonicLogin.logout();
   }
@@ -65,10 +50,27 @@ angular.module('starter.controllers', [])
      }
 })
 
-.controller('SignUpCtrl', function($scope, $stateParams, IonicLogin) {
-  console.warn("Signup");
+.controller('SignUpCtrl', function($log, $scope, $state, IonicLogin) {
+  $log.info("SignUpCtrl");
+  $scope.contactSupport = function(){
+    $state.go('support');
+  }
+  $scope.patronRegisteration = function(){
+    $state.go('patronRegisteration');
+  }
+  $scope.beneficiaryRegisteration = function(){
+    $state.go('beneficiaryRegisteration');
+  }
 })
 
-.controller('AccountCtrl', function($scope) {
+.controller('PatronCtrl', function($log, $scope, $state, IonicLogin) {
+  $log.info("PatronCtrl");
+})
 
+.controller('BeneficiaryCtrl', function($log, $scope, $state, IonicLogin) {
+  $log.info("BeneficiaryCtrl");
+})
+
+.controller('SupportCtrl', function($log, $scope, $stateParams, IonicLogin) {
+  $log.info("SupportCtrl");
 });
