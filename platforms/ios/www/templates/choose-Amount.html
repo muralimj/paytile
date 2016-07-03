@@ -1,0 +1,23 @@
+<ion-view view-title="{{'CHOOSE_AMOUNT_TITLE_1'| translate}}">
+  <ion-content class="padding">
+    <br>
+      <div class="paytileDesc">
+        <p class="paytileDesc-text">{{ 'CHOOSE_AMOUNT_TITLE_2' | translate }} <br> {{ 'CHOOSE_AMOUNT_TITLE_3' | translate }} <br>{{ 'CHOOSE_AMOUNT_TITLE_4' | translate }} </p>
+      </div>
+      <br><br><br>
+      <div class="center">
+        <button class="fixed-button fixed-button-color button-margin" ng-click="paymentProcess()">$1</button>
+        <button class="fixed-button fixed-button-color button-margin" ng-click="paymentProcess()">$2</button>
+      </div>
+      <div class="center">
+        <button class="fixed-center-button fixed-button-color"  ng-click="otherAmount()">{{'CHOOSE_AMOUNT_TITLE_5' | translate}}<br>{{'CHOOSE_AMOUNT_TITLE_6' | translate}}</button>
+      </div>
+      <div class="center">
+        <button class="fixed-button fixed-button-color button-margin" ng-click="paymentProcess()">$3</button>
+        <button class="fixed-button fixed-button-color button-margin" ng-click="paymentProcess()">$4</button>
+      </div>
+
+  </ion-content>
+  <ion-footer-bar align-title="center" class="bar-balanced">
+  </ion-footer-bar>
+</ion-view>

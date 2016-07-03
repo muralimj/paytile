@@ -2,15 +2,119 @@
   "APP_TITLE":                   "PayTile",
   "TITLE_DESC_1":                "Welcome to PayTile !",
   "TITLE_DESC_2":                "Pay and Earn in style. Please login below.",
+  "TITLE_DESC_3":                "Congratulations !",
+  "TITLE_DESC_4":                "Pay and Earn in Style !",
+  "TITLE_DESC_5":                "MAKE YOUR SElECTION",
+  "TITLE_DESC_6":                "Registration",
+
+  "FORGOT_PSSWD_TITLE_1":        "Forgot Password",
+
   "TOGGLE_BTN_DESC":             "Always Logged In",
   "LOGIN_BTN":                   "Login",
   "FORGOT_PSSWD":                "Forgot Password?",
   "SIGN_UP_DESC":                "Not a member?",
   "SIGN_UP":                     "Sign up",
+  "PREVIEW_TEMPLATE_TITLE":      "Preview",
+  "EDITOR_TEMPLATE_TITLE":       "Editor",
+
+  "BTN_CANCEL":                  "Cancel",
+  "BTN_SEND_CODE":               "Send Code",
+  "BTN_REGISTER":                "Register",
+
+  "SIDE_MENU_TEMPLATE_CONTENT":  "Content",
+  "SIDE_MENU_TEMPLATE_NEW_POST": "New Post",
+  "SIDE_MENU_TEMPLATE_SETTINGS": "Settings",
+
+  "PATRON_CREDIT_INFO":          "Credit Card Details",
+  "BENEFICIARY_AC_INFO":         "Bank Account Details",
+  "ALL_POSTS":                   "ALL POSTS",
+  "NO_POSTS":                    "No posts :(",
+  "EDIT":                        "EDIT",
+  "MARKDOWN":                    "MARKDOWN",
+  "PREVIEW":                     "PREVIEW",
+  "UPDATE_POST":                 "UPDATE POST",
   "BACK_BTN":                    "Back",
-  "SIGN_UP_TITLE_DESC_1":        "Pay and Earn in style",
-  "SIGN_UP_TITLE_DESC_2":        "MAKE YOUR SELECTION",
-  "USER_PATRON_BTN":             "Patron",
-  "USER_BENEFICIARY_BTN":        "Beneficiary",
-  "SIGN_UP_FOOTER":              "Click here to get in touch with us"
+
+  "ANALYTICS_TITLE_1":           "Analytics",
+  "ANALYTICS_TITLE_2":           "Name",
+  "ANALYTICS_TITLE_3":           "Paid today",
+  "ANALYTICS_TITLE_4":           "Paid This Week",
+  "ANALYTICS_TITLE_5":           "Paid All Time",
+  "ANALYTICS_TITLE_6":           "Graphical Trends",
+  "ANALYTICS_TITLE_7":           "Location Trends",
+
+  "BENEFICIARY_VIEW_TITLE_1":    "Patron View",
+
+  "BENEFICIARY_PS_TITLE_1":      "My Account",
+  "BENEFICIARY_PS_TITLE_2":      "Edit Profile",
+  "BENEFICIARY_PS_TITLE_3":      "Analytics",
+  "BENEFICIARY_PS_TITLE_4":      "Manual Charge",
+  "BENEFICIARY_PS_TITLE_5":      "Report Problem",
+
+  "BENEFICIARY_PROFILE_TITLE_1":  "Profile",
+  "BENEFICIARY_PROFILE_TITLE_2":  "Name",
+  "BENEFICIARY_PROFILE_TITLE_3":  "Display Pic",
+  "BENEFICIARY_PROFILE_TITLE_4":  "Occupation",
+  "BENEFICIARY_PROFILE_TITLE_5":  "PayTile Email Subscp",
+  "BENEFICIARY_PROFILE_TITLE_6":  "Change Password",
+  "BENEFICIARY_PROFILE_TITLE_7":  "Switch to Patron Mode",
+
+  "BENEFICIARY_ANALYTICS_TITLE_1": "Analytics",
+  "BENEFICIARY_ANALYTICS_TITLE_2": "Name",
+  "BENEFICIARY_ANALYTICS_TITLE_3": "Earned Today",
+  "BENEFICIARY_ANALYTICS_TITLE_4": "Earned This Week",
+  "BENEFICIARY_ANALYTICS_TITLE_5": "Earned All Time",
+  "BENEFICIARY_ANALYTICS_TITLE_6": "Graphical Trends",
+  "BENEFICIARY_ANALYTICS_TITLE_7": "Location trends",
+
+  "BENEFICIARY_MC_TITLE_1":      "Manual Charge",
+  "BENEFICIARY_MC_TITLE_2":      "Enter Amount",
+
+  "CHOOSE_AMOUNT_TITLE_1":       "Choose Amount",
+  "CHOOSE_AMOUNT_TITLE_2":       "Please choose the amount you",
+  "CHOOSE_AMOUNT_TITLE_3":       "wish to tip.Remember no",
+  "CHOOSE_AMOUNT_TITLE_4":       "amount is too little",
+  "CHOOSE_AMOUNT_TITLE_5":       "other",
+  "CHOOSE_AMOUNT_TITLE_6":       "amount",
+
+  "NOTIFICATIONS_TITLE_1":       "Notifications",
+  "NOTIFICATIONS_TITLE_2":       "Name",
+  "NOTIFICATIONS_TITLE_3":       "Becon Notifications",
+  "NOTIFICATIONS_TITLE_4":       "App Notifications",
+  "NOTIFICATIONS_TITLE_5":       "Quiet Hours",
+
+  "REPORT_PROBLEM_TITLE_1":      "Support",
+  "REPORT_PROBLEM_TITLE_2":      "What Seems to be the issue?",
+  "REPORT_PROBLEM_TITLE_3":      "Prefer Call us?",
+
+  "SERVICE_PROVIDERS_TITLE_1":    "Service Providers",
+  "SERVICE_PROVIDERS_DESC":       "Tap on the person you want to reward today!",
+
+  "SIGN_UP_TITLE_1":              "SignUp",
+  "SIGN_UP_TITLE_2":              "Patron",
+  "SIGN_UP_TITLE_3":              "Beneficiary",
+
+  "SETTINGS_TITLE_1":            "Settings",
+  "SETTINGS_TITLE_2":            "Edit Profile",
+  "SETTINGS_TITLE_3":            "Analytics",
+  "SETTINGS_TITLE_4":            "Notifications",
+  "SETTINGS_TITLE_5":            "Report a Problem",
+
+  "PATRON_REGISTRATION_TITLE_1": "Patron Registration",
+
+  "PROFILE_TITLE_1":             "Profile",
+  "PROFILE_TITLE_2":             "Name",
+  "PROFILE_TITLE_3":             "Default Payment ",
+  "PROFILE_TITLE_4":             "Payment Confirmations",
+  "PROFILE_TITLE_5":             "PayTile Email Subscp",
+  "PROFILE_TITLE_6":             "Change Password",
+  "PROFILE_TITLE_7":             "Switch to Beneficiary Mode",
+
+  "PAYMENT_TITLE_1":             "This is embarrassing!",
+  "PAYMENT_TITLE_2":             "Your card could not be",
+  "PAYMENT_TITLE_3":             "validated.Please check your",
+  "PAYMENT_TITLE_4":             "card details",
+  "PAYMENT_TITLE_5":             "Pay"
+
+
 }

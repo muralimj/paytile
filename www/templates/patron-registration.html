@@ -1,0 +1,51 @@
+<ion-view view-title="{{'PATRON_REGISTRATION_TITLE_1' | translate}}">
+  <ion-content class="padding">
+    <br>
+    <div class="paytileDesc">
+      <p class="paytileDesc-text">{{ 'TITLE_DESC_6' | translate }}</p>
+    </div>
+    <form name="registrationForm">
+      <div class="loginList loginList-inset">
+        <label class="loginItem loginItem-input ion-person">
+          <input required type="text" placeholder="First Name" >
+        </label>
+        <label class="loginItem loginItem-input ion-person">
+          <input required type="text" placeholder="Last Name" >
+        </label>
+        <label class="loginItem loginItem-input ion-email">
+          <input required type="text" placeholder="Email">
+        </label>
+        <label class="loginItem loginItem-input ion-locked">
+          <input required type="text" placeholder="Password">
+        </label>
+        <label class="loginItem loginItem-input ion-locked">
+          <input required type="text" placeholder="Conform Password">
+        </label>
+      </div>
+    </form>
+    <br>
+    <div class="paytileDesc">
+      <p class="paytileDesc-text">{{ 'PATRON_CREDIT_INFO' | translate }}</p>
+    </div>
+    <form>
+      <div class="loginList loginList-inset">
+        <label class="loginItem loginItem-input ion-card">
+          <input required type="text" placeholder="Card Number">
+        </label>
+        <label class="loginItem loginItem-input ion-calendar">
+          <input required type="text" placeholder="mm/yyyy">
+        </label>
+        <label class="loginItem loginItem-input ion-cvv">
+          <input required type="text" placeholder="cvv">
+        </label>
+        <label class="loginItem loginItem-input ion-person">
+          <input required type="text" placeholder="Name on Card">
+        </label>
+      </div>
+    </form>
+
+    <button class="loginBtn button-block button-dark" > {{ 'BTN_REGISTER' | translate }}</button>
+  </ion-content>
+  <ion-footer-bar align-title="center" class="bar-balanced">
+  </ion-footer-bar>
+</ion-view>

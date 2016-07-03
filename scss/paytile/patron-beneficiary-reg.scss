@@ -1,0 +1,31 @@
+.ion-person::before{
+  content: url('../../www/img/person.png');
+  padding-right: 10px;
+}
+
+.ion-card:before{
+  content: url('../../www/img/card.png');
+  padding-right: 10px;
+}
+
+.ion-calendar:before{
+  content: url('../../www/img/calendar.png');
+  padding-right:10px;
+}
+
+.ion-cvv:before{
+  content: url('/www/img/cvv.jpg');
+  padding-right: 10px;
+}
+.ion-gear-b:before{
+  content: url('/www/img/gear-b.jpg');
+  background-size: 20px;
+  width:30px;
+  height: 30px;
+  padding-left: 20px;
+}
+
+.button.round{
+  width:120px;
+  border-radius: 4em;
+}

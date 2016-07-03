@@ -3,7 +3,6 @@ module.exports = [
     {
         "file": "plugins/cordova-plugin-globalization/www/GlobalizationError.js",
         "id": "cordova-plugin-globalization.GlobalizationError",
-        "pluginId": "cordova-plugin-globalization",
         "clobbers": [
             "window.GlobalizationError"
         ]
@@ -11,7 +10,6 @@ module.exports = [
     {
         "file": "plugins/cordova-plugin-globalization/www/globalization.js",
         "id": "cordova-plugin-globalization.globalization",
-        "pluginId": "cordova-plugin-globalization",
         "clobbers": [
             "navigator.globalization"
         ]
@@ -19,7 +17,6 @@ module.exports = [
     {
         "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
         "id": "cordova-plugin-splashscreen.SplashScreen",
-        "pluginId": "cordova-plugin-splashscreen",
         "clobbers": [
             "navigator.splashscreen"
         ]

@@ -1,14 +1,15 @@
-<ion-view view-title="{{ 'SIGN_UP' | translate }}">
-  <ion-content>
+<ion-view view-title="{{'SIGN_UP_TITLE_1' | translate}}">
+  <ion-content class="padding">
+    <br />
     <div class="paytileDesc">
-        <p class="paytileDesc-text">{{ 'TITLE_DESC_1' | translate }}<br />{{ 'SIGN_UP_TITLE_DESC_1' | translate }}<br />{{ 'SIGN_UP_TITLE_DESC_2' | translate }}</p>
+        <p class="paytileDesc-text">{{ 'TITLE_DESC_3' | translate }} <br>{{ 'TITLE_DESC_1' | translate }}<br>{{ 'TITLE_DESC_4' | translate }}<br>{{ 'TITLE_DESC_5' | translate }}</p>
     </div>
+    <br />
     <div class="selUserDiv">
-      <button class="selUserbutton button-balanced" ng-click="patronRegisteration()">{{ 'USER_PATRON_BTN' | translate }}</button>
-      <button class="selUserbutton button-balanced" ng-click="beneficiaryRegisteration()">{{ 'USER_BENEFICIARY_BTN' | translate }}</button>
+      <button class=" selUserbutton button-calm button round" ng-click="patronReg()">{{'SIGN_UP_TITLE_2' | translate}}</button>
+      <button class="selUserbutton button-calm button round"ng-click="beneficiaryReg()">{{'SIGN_UP_TITLE_3' | translate}}</button>
     </div>
-    <ion-footer-bar class="bar bar-footer bar-stable">
-      <div class="title"><a ng-click="contactSupport()">{{ 'SIGN_UP_FOOTER' | translate }}</a></div>
-    </ion-footer-bar>
   </ion-content>
+  <ion-footer-bar align-title="center" class="bar-balanced">
+  </ion-footer-bar>
 </ion-view>

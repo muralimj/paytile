@@ -10,10 +10,15 @@ angular.module('starter.controllers', [])
 
   $scope.login = function(){
        IonicLogin.login($scope.data.email, $scope.data.password);
+       $state.go('serviceProviders')
   }
 
    $scope.signUp = function(){
      $state.go('signup');
+  }
+
+  $scope.forgotPassword = function(){
+    $state.go('forgotPassword');
   }
 
 })
@@ -50,27 +55,125 @@ angular.module('starter.controllers', [])
      }
 })
 
-.controller('SignUpCtrl', function($log, $scope, $state, IonicLogin) {
-  $log.info("SignUpCtrl");
-  $scope.contactSupport = function(){
-    $state.go('support');
+.controller('ServiceProviderCtrl', function($scope, $stateParams, IonicLogin, $state){
+    $scope.chooseAmount = function(){
+      $state.go('chooseAmount');
+    }
+
+    $scope.patronProfileSettings = function(){
+      $state.go('patronProfileSettings');
+    }
+
+    $scope.beneficiaryPatronView = function(){
+      $state.go('beneficiaryPatronView');
+    }
+})
+
+.controller('SignUpCtrl', function($scope, $stateParams, IonicLogin, $state){
+  console.warn("Signup");
+
+  $scope.patronReg = function(){
+    $state.go('patron');
   }
-  $scope.patronRegisteration = function(){
-    $state.go('patronRegisteration');
-  }
-  $scope.beneficiaryRegisteration = function(){
-    $state.go('beneficiaryRegisteration');
+
+  $scope.beneficiaryReg = function(){
+    $state.go('beneficiary');
   }
 })
 
-.controller('PatronCtrl', function($log, $scope, $state, IonicLogin) {
-  $log.info("PatronCtrl");
+.controller('ForgotPasswdCtrl', function($scope, $stateParams, IonicLogin, $state){
+  console.warn("ForgotPassword");
 })
 
-.controller('BeneficiaryCtrl', function($log, $scope, $state, IonicLogin) {
-  $log.info("BeneficiaryCtrl");
+.controller('PatronRegCtrl', function($scope, $stateParams, $log, $state){
+
 })
 
-.controller('SupportCtrl', function($log, $scope, $stateParams, IonicLogin) {
-  $log.info("SupportCtrl");
+.controller('BeneficiaryRegCtrl', function($scope, $stateParams, $state){
+
+})
+
+.controller('ChooseAmountCtrl', function($scope, $stateParams, $log, $state){
+    $scope.paymentProcess = function(){
+      $state.go('paymentProcess');
+    }
+})
+
+.controller('PaymentProcessCtrl', function($scope, $stateParams, $state){
+
+})
+
+.controller('PatronProfileSettingsCtrl', function($scope, $stateParams, $state){
+    $scope.patronEditProfile = function(){
+      $state.go('patronEditProfile');
+    }
+
+    $scope.patronAnalytics = function(){
+      $state.go('patronAnalytics');
+    }
+
+    $scope.patronNotifications = function(){
+      $state.go('patronNotifications');
+    }
+
+    $scope.reportProblem = function(){
+        $state.go('reportProblem');
+    }
+})
+
+.controller('PatronEditProfileCtrl', function($scope, $stateParams, $state){
+
+})
+
+.controller('PatronAnalyticsCtrl', function($scope, $stateParams, $state){
+
+})
+
+.controller('PatronNotificationsCtrl', function($scope, $stateParams, $state){
+
+})
+
+.controller('ReportProblemCtrl', function($scope, $stateParams, $state){
+
+})
+
+/* Beneficiary Controllers */
+
+.controller('BeneficiaryCtrl', function($scope, $stateParams, $state){
+
+  $scope.beneficiaryProfileSettings = function(){
+    $state.go('beneficiaryProfileSettings');
+  }
+})
+
+.controller('BeneficiaryProfileSettingsCtrl', function($scope, $stateParams, $state){
+
+  $scope.beneficiaryEditProfile = function(){
+    $state.go('beneficiaryEditProfile');
+  }
+
+  $scope.beneficiaryAnalytics = function(){
+    $state.go('beneficiaryAnalytics');
+  }
+
+  $scope.beneficiaryManualCharge = function(){
+    $state.go('beneficiaryManualCharge');
+  }
+
+})
+
+.controller('BeneficiaryEditProfileCtrl', function( $scope, $stateParams, $state){
+
+})
+
+.controller('BeneficiaryAnalyticsCtrl', function( $scope, $stateParams, $state){
+
+})
+
+.controller('BeneficiaryManualChargeCtrl', function( $scope, $stateParams, $state){
+  
+})
+
+.controller('AccountCtrl', function($scope) {
+
 });

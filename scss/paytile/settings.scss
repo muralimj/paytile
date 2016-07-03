@@ -1,0 +1,33 @@
+.left{
+  text-align: left;
+}
+
+.padding-div{
+  padding: 20px 0px 0px 10px;
+}
+.span-style{
+  font-size: 20px;
+}
+
+.switch-button{
+  width: 200px;
+  height: 100px;
+  color: #7f7f7f;
+  border-radius: .5em;
+  border-width: thick;
+  font-size: 20px;
+  font-weight:800;
+  background: #fff; /* For browsers that do not support gradients */
+  background: linear-gradient(#fff, #99ff99);
+}
+/*Profile settings button css*/
+.border{
+  border-radius: 8px;
+  border-width: thin;
+  border-color: $dark;
+}
+
+.button-padding{
+  padding: 15px 10px 15px 10px;
+  font-size: 23px;
+}

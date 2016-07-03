@@ -1,18 +1,35 @@
-angular.module('starter.services', [])
+angular.module('starter.services', []).
+    config(['$httpProvider', function($httpProvider){
+        $httpProvider.defaults.xsrfHeaderName = 'X-CSRFToken';
+        $httpProvider.defaults.xsrfCookieName = 'csrftoken';
+    }])
 
-.factory('IonicLogin', function( $http, $state, $ionicPopup, $ionicLoading) {
+.factory('IonicLogin', function( $http, $state, $ionicPopup, $ionicLoading, $log) {
+  $http.defaults.xsrfHeaderName = 'X-CSRFToken';
+  $http.defaults.xsrfCookieName = 'csrftoken';
+  function add_auth_header(data, headersGetter){
+      $http.defaults.xsrfHeaderName = 'X-CSRFToken';
+      $http.defaults.xsrfCookieName = 'csrftoken';
+      var headers = headersGetter();
 
+      headers['Authorization'] = ('Basic ' + btoa(data.username +
+                                  ':' + data.password));
+      $log.warn(data);
+  }
   function login(email, password){
 
       $ionicLoading.show({
               template: 'Creating Account...'
           });
-
-      $http.post("http://localhost:3000/login",
-             { params: {
-                         "email": email,
-                         "password": password}
-                        })
+          $log.warn(email + password);
+      $http({method: 'POST', url: 'http://localhost:9090/api/auth/', data: {"email_id": email,
+       "user_password": password}, header: add_auth_header})
+      /*$http.post("http://localhost:9090/api/auth/",
+          {
+                        data: {"email_id": email,
+                         "user_password": password},
+                         transformRequest: add_auth_header
+                       })*/
                .success(function(response) {
 
                     $ionicLoading.hide();

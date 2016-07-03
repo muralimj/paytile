@@ -66,7 +66,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
 .config(function($ionicConfigProvider, $stateProvider, $urlRouterProvider) {
 
-  $ionicConfigProvider.backButton.text("{{ 'BACK_BTN' | translate }}");                    // default is 'Back'
+  $ionicConfigProvider.backButton.text("{{ 'BACK_BTN' | translate }}");  // default is 'Back'
   $ionicConfigProvider.backButton.previousTitleText(false);
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router
@@ -83,30 +83,107 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
   // Each tab has its own nav history stack:
 
+  .state('serviceProviders',{
+      url: '/serviceProviders',
+      templateUrl: 'templates/service-provider.html',
+      controller: 'ServiceProviderCtrl'
+  })
+
+  .state('chooseAmount',{
+      url: '/chooseAmount',
+      templateUrl: 'templates/choose-amount.html',
+      controller: 'ChooseAmountCtrl'
+  })
+  .state('paymentProcess',{
+      url: '/paymentProcess',
+      templateUrl: 'templates/make-payment.html',
+      controller: 'PaymentProcessCtrl'
+  })
+
   .state('signup', {
       url: '/signup',
       templateUrl: 'templates/signup.html',
       controller: 'SignUpCtrl'
-
-
   })
-  .state('patronRegisteration', {
-      url: '/patronRegisteration',
-      templateUrl: 'templates/patron-registeration.html',
-      controller: 'PatronCtrl'
 
+  .state('forgotPassword',{
+      url: '/forgotPassword',
+      templateUrl: 'templates/forgot-password.html',
+      controller: 'ForgotPasswdCtrl'
+  })
 
-  }).state('beneficiaryRegisteration', {
-      url: '/beneficiaryRegisteration',
-      templateUrl: 'templates/beneficiary-registeration.html',
+  .state('patron', {
+      url: '/patron',
+      templateUrl: 'templates/patron-registration.html',
+      controller: 'PatronRegCtrl'
+  })
+
+  .state('beneficiary',{
+      url: '/beneficiary',
+      templateUrl: 'templates/beneficiary-registration.html',
+      controller: 'BeneficiaryRegCtrl'
+  })
+
+  .state('patronProfileSettings',{
+      url: '/patron-profile-settings',
+      templateUrl: 'templates/patron-profile-settings.html',
+      controller: 'PatronProfileSettingsCtrl'
+  })
+
+  .state('patronEditProfile',{
+      url: '/patron-Edit-Profile',
+      templateUrl: 'templates/patron-edit-profile.html',
+      controller: 'PatronEditProfileCtrl'
+  })
+
+  .state('patronAnalytics',{
+      url: '/patronAnalytics',
+      templateUrl: 'templates/patron-analytics.html',
+      controller: 'PatronAnalyticsCtrl'
+  })
+
+  .state('patronNotifications',{
+      url: '/patronNotifications',
+      templateUrl: 'templates/patron-notifications.html',
+      controller: 'PatronNotificationsCtrl'
+  })
+
+  .state('reportProblem',{
+      url: '/reportProblem',
+      templateUrl: 'templates/report-problem.html',
+      controller: 'ReportProblemCtrl'
+  })
+
+  .state('beneficiaryPatronView',{
+      url: '/Patron-View',
+      templateUrl: 'templates/beneficiary-patron-view.html',
       controller: 'BeneficiaryCtrl'
+  })
 
+  .state('beneficiaryProfileSettings',{
+      url: '/My-Account',
+      templateUrl: 'templates/beneficiary-profile-settings.html',
+      controller: 'BeneficiaryProfileSettingsCtrl'
+  })
 
-  }).state('support', {
-      url: '/support',
-      templateUrl: 'templates/support.html',
-      controller: 'SupportCtrl'
-  });
+  .state('beneficiaryEditProfile',{
+      url: '/Beneficiary-Edit-Profile',
+      templateUrl: 'templates/beneficiary-edit-profile.html',
+      controller: 'BeneficiaryEditProfileCtrl'
+  })
+
+  .state('beneficiaryAnalytics',{
+      url: '/Beneficiary-Analytics',
+      templateUrl: 'templates/beneficiary-analytics.html',
+      controller: 'BeneficiaryAnalyticsCtrl'
+  })
+
+  .state('beneficiaryManualCharge',{
+      url: '/Beneficiary-Manual-Charge',
+      templateUrl: 'templates/beneficiary-manual-charge.html',
+      controller: 'BeneficiaryManualChargeCtrl'
+  })
+
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/login');
 

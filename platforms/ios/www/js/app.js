@@ -83,32 +83,107 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
   // Each tab has its own nav history stack:
 
+  .state('serviceProviders',{
+      url: '/serviceProviders',
+      templateUrl: 'templates/service-Provider.html',
+      controller: 'ServiceProviderCtrl'
+  })
+
+  .state('chooseAmount',{
+      url: '/chooseAmount',
+      templateUrl: 'templates/choose-Amount.html',
+      controller: 'ChooseAmountCtrl'
+  })
+  .state('paymentProcess',{
+      url: '/paymentProcess',
+      templateUrl: 'templates/make-Payment.html',
+      controller: 'PaymentProcessCtrl'
+  })
+
   .state('signup', {
       url: '/signup',
       templateUrl: 'templates/signup.html',
       controller: 'SignUpCtrl'
-
-
   })
-  .state('patronRegisteration', {
-      url: '/patronRegisteration',
-      templateUrl: 'templates/patron-registeration.html',
-      controller: 'PatronCtrl'
 
+  .state('forgotPassword',{
+      url: '/forgotPassword',
+      templateUrl: 'templates/forgot-Password.html',
+      controller: 'ForgotPasswdCtrl'
+  })
 
-  }).state('beneficiaryRegisteration', {
-      url: '/beneficiaryRegisteration',
-      templateUrl: 'templates/beneficiary-registeration.html',
+  .state('patron', {
+      url: '/patron',
+      templateUrl: 'templates/patron-Registration.html',
+      controller: 'PatronRegCtrl'
+  })
+
+  .state('beneficiary',{
+      url: '/beneficiary',
+      templateUrl: 'templates/beneficiary-Registration.html',
+      controller: 'BeneficiaryRegCtrl'
+  })
+
+  .state('patronProfileSettings',{
+      url: '/patron-profile-settings',
+      templateUrl: 'templates/patron-Profile-Settings.html',
+      controller: 'PatronProfileSettingsCtrl'
+  })
+
+  .state('patronEditProfile',{
+      url: '/patron-Edit-Profile',
+      templateUrl: 'templates/patron-Edit-Profile.html',
+      controller: 'PatronEditProfileCtrl'
+  })
+
+  .state('patronAnalytics',{
+      url: '/patronAnalytics',
+      templateUrl: 'templates/patron-Analytics.html',
+      controller: 'PatronAnalyticsCtrl'
+  })
+
+  .state('patronNotifications',{
+      url: '/patronNotifications',
+      templateUrl: 'templates/patron-Notifications.html',
+      controller: 'PatronNotificationsCtrl'
+  })
+
+  .state('reportProblem',{
+      url: '/reportProblem',
+      templateUrl: 'templates/report-Problem.html',
+      controller: 'ReportProblemCtrl'
+  })
+
+  .state('beneficiaryPatronView',{
+      url: '/Patron-View',
+      templateUrl: 'templates/beneficiary-Patron-View.html',
       controller: 'BeneficiaryCtrl'
+  })
 
+  .state('beneficiaryProfileSettings',{
+      url: '/My-Account',
+      templateUrl: 'templates/beneficiary-Profile-Settings.html',
+      controller: 'BeneficiaryProfileSettingsCtrl'
+  })
 
-  }).state('support', {
-      url: '/support',
-      templateUrl: 'templates/support.html',
-      controller: 'SupportCtrl'
+  .state('beneficiaryEditProfile',{
+      url: '/Beneficiary-Edit-Profile',
+      templateUrl: 'templates/beneficiary-Edit-Profile.html',
+      controller: 'BeneficiaryEditProfileCtrl'
+  })
 
+  .state('beneficiaryAnalytics',{
+      url: '/Beneficiary-Analytics',
+      templateUrl: 'templates/beneficiary-Analytics.html',
+      controller: 'BeneficiaryAnalyticsCtrl'
+  })
 
-  });
+  .state('beneficiaryManualCharge',{
+      url: '/Beneficiary-Manual-Charge',
+      templateUrl: 'templates/beneficiary-Manual-Charge.html',
+      controller: 'BeneficiaryManualChargeCtrl'
+  })
+
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/login');
 

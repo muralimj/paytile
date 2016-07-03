@@ -1,0 +1,24 @@
+<ion-view view-title="{{'SERVICE_PROVIDERS_TITLE_1' | translate}}">
+  <ion-content>
+    <ion-list>
+      <div class="custom-item custom-item-avatar-right " ng-click="chooseAmount()"
+                          ng-repeat="provider in providers" ng-controller="ServiceProviderCtrl">
+        <img ng-src="{{provider.pic}}"/>
+        <span class="providers">{{provider.name}}</span>
+        <p class="poss">{{provider.profession}}</p>
+      </div>
+    </ion-list>
+  <!--  <div class="center">
+      <button class="fixed-center-button fixed-button-color" ng-click="beneficiaryPatronView()">Beneficiary</button>
+    </div>-->
+  </ion-content>
+  <div class="bar-prov bar-footer-prov">
+    <!-- diamond shape-->
+    <div class="diamond fixed-button-color">
+      <p class="rotate">{{'SERVICE_PROVIDERS_DESC' | translate}}</p>
+    </div>
+    <div class="settings">
+      <img class="gearIcon" src="img/Settings-icon.png" ng-click="patronProfileSettings()" />
+    </div>
+  </div>
+</ion-view>
