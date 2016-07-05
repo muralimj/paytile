@@ -101,7 +101,23 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('ChooseAmountCtrl', function($scope, $stateParams, $log, $state){
+.controller('ChooseAmountCtrl', function($scope, $stateParams, $log, $state, $ionicPopup){
+    // Prompt popup code
+    $scope.chooseTip = function() {
+      var promptPopup = $ionicPopup.prompt({
+        title: "Other Amount",
+        template: "{{ 'CHOOSE_AMT_DESC' | translate }}",
+        //inputPlaceholder:
+        cancelText: "Cancel",
+        //cancelType: String (default: 'button-default'). The type of the Cancel button.
+        okText: "Tip"// String (default: 'OK'). The text of the OK button.
+        //okType:
+      });
+      promptPopup.then(function(res) {
+
+      });
+    }
+
     $scope.paymentProcess = function(){
       $state.go('paymentProcess');
     }
@@ -152,6 +168,10 @@ angular.module('starter.controllers', [])
   $scope.beneficiaryProfileSettings = function(){
     $state.go('beneficiaryProfileSettings');
   }
+
+  $scope.beneficiarys = [
+    { pic: 'img/ionic.png', name: 'John Doe', profession: 'Valet Parking' }
+  ];
 })
 
 .controller('BeneficiaryProfileSettingsCtrl', function($scope, $stateParams, $state){
@@ -167,6 +187,11 @@ angular.module('starter.controllers', [])
   $scope.beneficiaryManualCharge = function(){
     $state.go('beneficiaryManualCharge');
   }
+
+  $scope.beneficiarys = [
+    { pic: 'img/ionic.png', name: 'John Doe', profession: 'Valet Parking' }
+  ];
+
 
 })
 

@@ -2,11 +2,13 @@
   <ion-content class="padding">
     <br>
     <ion-list >
-      <ion-item class="item item-avatar card-color round ">
-        <img src="/img/image.jpg" >
-        <h2>dushyanth<h2>
-        <h3>Valet parking</h3>
-      </ion-item>
+      <div class="custom-item custom-item-avatar-right "
+                      ng-repeat="beneficiary in beneficiarys"  ng-controller="BeneficiaryCtrl">
+
+        <img ng-src="{{beneficiary.pic}}"/>
+        <span class="providers">{{beneficiary.name}}</span>
+        <p class="poss">{{beneficiary.profession}}</p>
+      </div>
     </ion-list>
     <br><br>
     <button class="button-padding button-block left border" ng-click="beneficiaryEditProfile()">

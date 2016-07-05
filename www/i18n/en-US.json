@@ -1,8 +1,8 @@
 {
   "APP_TITLE":                   "PayTile",
+  "SIGNUP_HEADER":               "Congratulations!",
   "TITLE_DESC_1":                "Welcome to PayTile !",
   "TITLE_DESC_2":                "Pay and Earn in style. Please login below.",
-  "TITLE_DESC_3":                "Congratulations !",
   "TITLE_DESC_4":                "Pay and Earn in Style !",
   "TITLE_DESC_5":                "MAKE YOUR SElECTION",
   "TITLE_DESC_6":                "Registration",
@@ -14,11 +14,13 @@
   "FORGOT_PSSWD":                "Forgot Password?",
   "SIGN_UP_DESC":                "Not a member?",
   "SIGN_UP":                     "Sign up",
+  "SIGN_UP_FOOTER":              "Click here to get in touch with us.",
   "PREVIEW_TEMPLATE_TITLE":      "Preview",
   "EDITOR_TEMPLATE_TITLE":       "Editor",
 
   "BTN_CANCEL":                  "Cancel",
-  "BTN_SEND_CODE":               "Send Code",
+  "BTN_RESET_PSSWD":             "Reset Password",
+  "FORGOT_PSSWD_DESC":           "Please enter registered email id below to reset password.",
   "BTN_REGISTER":                "Register",
 
   "SIDE_MENU_TEMPLATE_CONTENT":  "Content",
@@ -72,10 +74,9 @@
 
   "CHOOSE_AMOUNT_TITLE_1":       "Choose Amount",
   "CHOOSE_AMOUNT_TITLE_2":       "Please choose the amount you",
-  "CHOOSE_AMOUNT_TITLE_3":       "wish to tip.Remember no",
+  "CHOOSE_AMOUNT_TITLE_3":       "wish to tip. Remember no",
   "CHOOSE_AMOUNT_TITLE_4":       "amount is too little",
-  "CHOOSE_AMOUNT_TITLE_5":       "other",
-  "CHOOSE_AMOUNT_TITLE_6":       "amount",
+  "CHOOSE_AMOUNT_TITLE_5":       "Other amount",
 
   "NOTIFICATIONS_TITLE_1":       "Notifications",
   "NOTIFICATIONS_TITLE_2":       "Name",
@@ -114,7 +115,11 @@
   "PAYMENT_TITLE_2":             "Your card could not be",
   "PAYMENT_TITLE_3":             "validated.Please check your",
   "PAYMENT_TITLE_4":             "card details",
-  "PAYMENT_TITLE_5":             "Pay"
+  "PAYMENT_TITLE_5":             "Pay",
 
+  "CHOOSE_AMT_TITLE":            "Other Amount",
+  "CHOOSE_AMT_DESC":             "Please enter the custom amount you would like to tip.",
+  "CHOOSE_AMT_CANCEL_BTN":       "Cancel",
+  "CHOOSE_AMT_TIP_BTN":          "Tip"
 
 }

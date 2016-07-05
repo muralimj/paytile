@@ -104,6 +104,24 @@
  transform: rotate(45deg);
  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, .05);
 }
+.diamond1{
+ margin: auto;
+ position: relative;
+ margin-left: -120px;
+ margin-top: -120px;
+ width: 120px;
+ height: 120px;
+ border-radius: 10px;
+ font-size: 14px;
+ top: 50%;
+ left: 70%;
+ background: $light;
+ border-color: $light;
+ color: #7f7f7f;
+ transform: rotate(45deg);
+
+}
+
 .rotate{
     margin: 10px 5px 0px 20px;
     transform: rotate(-45deg);
@@ -125,13 +143,14 @@
     display: flex;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     position: absolute;
     right: 0;
     left: 0;
     z-index: 9;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 5px;
     width: 100%;
@@ -142,4 +161,24 @@
     border-bottom: 1px solid #ddd;
     background-color: white;
     background-size: 0;
+}
+
+.sing-margin{
+  margin-bottom: 10px;
+}
+
+.double-margin{
+  margin-bottom: 20px;
+}
+
+.single-up-margin{
+  margin-top: 20px;
+}
+
+.double-up-margin{
+  margin-top: 40px;
+}
+
+.choo-top-margin{
+  margin-top: 60px;
 }

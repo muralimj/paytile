@@ -20,6 +20,8 @@ $dark:                            #444 !default;
 @import "paytile/service-providers.scss";
 @import "paytile/patron-beneficiary-reg.scss";
 @import "paytile/settings.scss";
+@import "paytile/buttons.scss";
+@import "paytile/profile.scss";
 
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;

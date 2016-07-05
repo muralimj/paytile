@@ -1,1 +1,6 @@
 platforms/
+www/css/ionic.app.css
+www/css/ionic.app.min.css
+node_modules/gulp-sass/node_modules/node-sass/vendor/linux-x64-48/
+www/.DS_Store
+.DS_Store
